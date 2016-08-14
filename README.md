@@ -25,6 +25,6 @@ build/
 ## Development 🚀
 
 1. Clone repo
-2. `npm install` to intall all dependencies
+2. `npm install` to install all dependencies
 3. `npm run start` to watch for changes and start a dev server on [localhost:8080](http://localhost:8080)
 4. `npm run build` to minify/uglify for production
