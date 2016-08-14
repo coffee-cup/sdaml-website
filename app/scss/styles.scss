@@ -1,0 +1,126 @@
+@import 'normalize';
+@import 'sass-css3-mixins';
+@import './css/animate.min.css';
+@import './css/tachyons.css';
+@import 'queries';
+@import 'fonts';
+@import 'variables';
+@import 'gridlex';
+@import 'utils';
+
+/* Makes border-box properties */
+// @include border-box-sizing;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+body {
+  font-family: $sans;
+  color: $text-dark;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  @extend .light;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+a, a:visited {
+  color: $accent-colour;
+  text-decoration: none;
+  transition: 0.250ms ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: $s-animation;
+}
+
+a.under {
+  text-decoration: under;
+}
+
+a.none, a.none:hover {
+  text-decoration: none;
+}
+
+.full {
+  min-height: 100vh;
+}
+
+.page {
+  width: 100%;
+  margin: 0;
+}
+
+.app {
+  overflow-x: hidden;
+}
+
+.main {
+  min-height: 90vh;
+  width: 100%;
+  padding: 0;
+  background-color: $main-colour;
+}
+
+.desc {
+  padding: 0 1rem;
+}
+
+header {
+  min-height: 80vh;
+  background-color: $main-colour;
+  color: $text-light;
+
+  .logo {
+    img {
+      width: 24rem;
+      max-width: 90%;
+    }
+  }
+
+  .copy {
+    max-width: 20rem;
+    padding-top: 0.5rem;
+    font-weight: 300;
+  }
+}
+
+.button {
+  display: block;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 0;
+  color: $text-light;
+  background-color: $accent-colour;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 2px;
+  height: 40px;
+  transition: $s-animation;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.button:hover {
+  color: $text-dark;
+}
+
+footer {
+  height: $footer-height;
+  p {
+    font-size: 1em;
+  }
+}
